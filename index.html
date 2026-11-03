@@ -94,7 +94,7 @@ tr:hover { background:#fafafa; }
   <button class="admin-toggle" onclick="toggleAdmin()">Enter / Update Results</button>
   <div id="admin-panel" style="display:none;">
     <div id="password-gate" class="password-box">
-      <p style="margin-bottom:8px; font-size:14px;">Password required to edit results:</p>
+      <p style="margin-bottom:8px; font-size:14px;">Admin Access Requiered. You have been denied.:</p>
       <input type="password" id="admin-password" placeholder="Enter password">
       <button class="btn" onclick="checkPassword()">Unlock</button>
     </div>
@@ -140,7 +140,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const resultsRef = ref(db, 'election2026');
-const ADMIN_PASSWORD = "collegedale2026"; // Change this to whatever you want
+const ADMIN_PASSWORD = "IceBerrgg#01"; // Change this to whatever you want
 const CANDIDATES = [
   { id: 'barrett', name: 'Bryan Barrett', color: '#1f4e79' },
   { id: 'fields', name: 'Jessica Fields', color: '#c65911' },
